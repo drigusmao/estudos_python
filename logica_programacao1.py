@@ -109,5 +109,5 @@ print('Adriana seu IMC é:', int(imc))
 #Printando a mesma coisa com f-strings
 print(f'{nome} seu IMC é: {imc:.0f}') #Quantas casas decimais você quer? 2? então imc:.2f a formatação quantas casas decimais você quer é ':.3f'
 
-#Formatação de strings com o método formal
+
 
