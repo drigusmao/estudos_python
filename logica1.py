@@ -190,6 +190,8 @@ if nome and idade:
 else:
   print('Desculpe, você deixou campos vazios.')
   
+"""
+Try/Except
+o try vai executar algo, se não der certo vai utilizar o except
 
-
-
+"""
