@@ -175,7 +175,7 @@ print(variavel[0:9:3]) #Lerá cada parte citada
 #Exercicio: Pela ao usuario seu nome, sua idade e se forem digitados exiba o {nome}, (nome invertido), se tem ou não espaços, quantidade de letras, primeira letra do nome, a ultima e se nada for digitado em nome e idade exiba a mensagem "Desculpe, voce deixou campos vazios".
 
 nome = (input('Digite seu nome: '))
-idade = (input('Digite sua idade '))
+idade = (input('Digite sua idade: '))
 
 if nome and idade:
   print(f'Seu nome é {nome}.')
@@ -189,9 +189,23 @@ if nome and idade:
     print('Seu nome não tem espaços.')
 else:
   print('Desculpe, você deixou campos vazios.')
+
   
 """
 Try/Except
-o try vai executar algo, se não der certo vai utilizar o except
+
+try: O código dentro do bloco try é executado.
+Exceção: Se uma exceção ocorrer durante a execução do bloco try, o Python procura por um bloco except correspondente ao tipo de exceção.
+except: Se um bloco except correspondente for encontrado, o código dentro desse bloco é executado.
+Continuação: Se nenhum erro ocorrer no bloco try, o bloco except é ignorado, e o programa continua sua execução normal. 
 
 """
+
+numero_str = input('Vou dobrar o número que você digitar: ') #Pede ao usuário um número e salva na variável numero_str.
+
+try: #Solicita para executar o código.
+   numero_float = float(numero_str) #Transforma a string em float.
+   print(f'O dobro de {numero_str} é {numero_float * 2} ')  #Faz a multiplicação do float e mostra seu resultado.
+except: #Se apresentar um erro na execução vai rodar a linha seguinte.
+   print('Isso não é um número.') #Encontrou o erro e então mostra na tela que o que foi digitado não era um número.
+
